@@ -259,7 +259,7 @@ find . -name "*.vcd"
 Open it with GTKWave:
 
 ```bash
-gtkwave test_run_dir/<test_folder>/TOP.vcd
+gtkwave test_run_dir/<test_folder>/testOnly TOPTest -- -DwriteVcd=1
 ```
 
 You can now inspect signals like **PC**, **instruction**, **aluResult**, and **writeBackData** cycle-by-cycle. If you only see a few clock pulses, press `Shift + Ctrl + F` (Zoom Fit) to view the entire trace.
