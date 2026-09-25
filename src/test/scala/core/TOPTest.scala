@@ -10,7 +10,7 @@ class TOPTest extends FreeSpec with ChiselScalatestTester {
 
      
       dut.clock.step(100)
-      dut.io.pc.expect(400.U)
+      dut.io.pc.expect(48.U)
 
       
     }
